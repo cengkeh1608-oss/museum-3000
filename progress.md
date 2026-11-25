@@ -64,4 +64,10 @@
 - Detail lengkap di drafts.md.
 
 ## Build
-- (diisi setelah build)
+- Repo: https://github.com/cengkeh1608-oss/museum-3000 — HEAD == origin/master terverifikasi (be9d8e09611f5d8585a39e163b99ac67d56ea454)
+- Entry commit: be9d8e0 "Museum of the Year 3000: tournament pick D4 (130 chars)"
+- Anchor drand: 849ed2d4efaafb75203c6c31c9be08ebcd6c873e (round 34279031)
+- Root commit hanya .makefun (init-first); LICENSE commit kedua; entry commit di atasnya berisi .makefun + LICENSE + main.ts + package.json + drafts.md + progress.md
+- Output terverifikasi 2x byte-identical dari cwd berbeda, sha256 6f984dd1965d29d7a9a6b1d727e15d5f5512548b094b6ee08df0a971f664e976, 131 byte (130 karakter + newline) — dalam gate 1–200
+- main.ts ditulis fresh dari spek dalam 2 pesan write/edit (tulis + edit guard validasi panjang yang mengubah isi sungguhan). Tanpa process.env/eval/dynamic import.
+- Flags execution-risk: 0.
